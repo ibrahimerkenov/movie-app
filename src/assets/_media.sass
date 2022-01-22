@@ -1,0 +1,72 @@
+@media only screen and (max-width : 1200px)
+  .movies-card
+    &__img
+      height: 450px
+    &__title
+      font-size: 15px
+  .movies
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr))
+
+@media only screen and (max-width : 992px)
+  .movies-card
+    &__img
+      height: 340px
+    &__title
+      font-size: 13px
+    &__overview
+      padding: 15px
+      font-size: 13px
+
+@media only screen and (max-width : 768px)
+  .movies
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr))
+  .movies-card
+    &__img
+      object-position: center top
+    &__title
+      font-size: 15px
+      padding: 10px 15px
+    &__overview
+      padding: 20px
+      font-size: 15px
+
+
+@media only screen and (max-width : 600px)
+  .main
+    &__header
+      padding: 17px
+    &__movies
+      padding: 17px
+  .movies
+    grid-gap: 15px
+  .movies-card
+    &__img
+      height: 300px
+
+@media only screen and (max-width : 480px)
+  .movies
+    grid-template-columns: repeat(auto-fill, minmax(90%, 1fr))
+    grid-gap: 25px
+  .movies-card
+    &__img
+      height: 400px
+    &__title
+      font-size: 17px
+      padding: 15px 20px
+  .main
+    &__movies
+      padding: 25px
+    &__header
+      padding: 25px
+      justify-content: center
+  .search,
+  .search__input
+    width: 100%
+  .movie-not-found
+    text-align: center
+    padding: 20px
+
+@media only screen and (max-width : 320px)
+  .movies-card
+    &__img
+      height: 300px
